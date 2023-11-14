@@ -9,7 +9,7 @@ void TitleScene::Init() {
 void TitleScene::Update(char* keys, char* preKeys) {
 	if (keys[DIK_RETURN] && !preKeys[DIK_RETURN]) {
 		// メインゲームに切り替え
-		IScene::sceneNo = GAMEMAIN;
+		IScene::sceneNo = STAGE;
 	}
 }
 

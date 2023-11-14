@@ -1,6 +1,6 @@
 #pragma once
 
-enum SCENE { TITLE, GAMEMAIN,RESULT };
+enum SCENE { TITLE, STAGE,CLEAR };
 
 class IScene
 {

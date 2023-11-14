@@ -5,8 +5,8 @@
 SceneManager::SceneManager() {
 	// 各シーンの配列
 	sceneArr_[TITLE] = std::make_unique<TitleScene>();
-	sceneArr_[GAMEMAIN] = std::make_unique<GameMainScene>();
-	sceneArr_[RESULT] = std::make_unique<ResultScene>();
+	sceneArr_[STAGE] = std::make_unique<GameMainScene>();
+	sceneArr_[CLEAR] = std::make_unique<ResultScene>();
 
 	// 初期シーン
 	currentSceneNo_ = TITLE;

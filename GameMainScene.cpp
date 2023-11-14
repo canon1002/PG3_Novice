@@ -16,7 +16,7 @@ void GameMainScene::Update(char* keys, char* preKeys) {
 	///	キー入力操作
 	/////////////////////////////////////////
 
-	if(!enemy_->GetIsActive()){ IScene::sceneNo = RESULT; }
+	if(!enemy_->GetIsActive()){ IScene::sceneNo = CLEAR; }
 
 	if (keys[DIK_W]) {
 		player_->Move(UP);
