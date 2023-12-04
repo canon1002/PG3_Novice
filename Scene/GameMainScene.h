@@ -1,7 +1,7 @@
 #pragma once
 #include "IScene.h"
-#include "Player.h"
-#include "Enemy.h"
+#include "./Object/Player.h"
+#include "./Object/Enemy.h"
 
 class GameMainScene:
 	public IScene

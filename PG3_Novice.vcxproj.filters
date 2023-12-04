@@ -23,17 +23,8 @@
     <Filter Include="Object">
       <UniqueIdentifier>{c51de160-8522-44b8-bc88-93666b9fb661}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scene\ステージ-Stage">
-      <UniqueIdentifier>{2f506d98-ebd2-4848-9164-baaff9f09f81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\クリア-Clear">
-      <UniqueIdentifier>{5bba058c-e730-4e13-a3af-e39ec21a5b1a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\タイトル-Title">
-      <UniqueIdentifier>{89a35cc9-6338-4a89-bc9e-a6525f036dae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\基底・マネージャー">
-      <UniqueIdentifier>{a8ea3171-7642-4298-98fc-cd8a9ac6c565}</UniqueIdentifier>
+    <Filter Include="Command">
+      <UniqueIdentifier>{2b7570bd-bde7-40cf-85a9-a6dff463f5ae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -59,32 +50,38 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp">
       <Filter>かまたエンジン</Filter>
     </ClCompile>
-    <ClCompile Include="IObject.cpp">
+    <ClCompile Include="Object\Enemy.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="Object\IObject.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
+    <ClCompile Include="Object\Player.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerBullet.cpp">
+    <ClCompile Include="Object\PlayerBullet.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
-      <Filter>Scene\タイトル-Title</Filter>
+    <ClCompile Include="Scene\IScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="ResultScene.cpp">
-      <Filter>Scene\クリア-Clear</Filter>
+    <ClCompile Include="Scene\ResultScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="GameMainScene.cpp">
-      <Filter>Scene\ステージ-Stage</Filter>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="IScene.cpp">
-      <Filter>Scene\基底・マネージャー</Filter>
+    <ClCompile Include="Scene\TitleScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Scene\基底・マネージャー</Filter>
+    <ClCompile Include="Command\ICommand.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\InputHandle.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -169,32 +166,38 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Vector4.h">
       <Filter>かまたエンジン</Filter>
     </ClInclude>
-    <ClInclude Include="IObject.h">
+    <ClInclude Include="Object\Enemy.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerBullet.h">
+    <ClInclude Include="Object\IObject.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="Object\Player.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
+    <ClInclude Include="Object\PlayerBullet.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="TitleScene.h">
-      <Filter>Scene\タイトル-Title</Filter>
+    <ClInclude Include="Scene\IScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="GameMainScene.h">
-      <Filter>Scene\ステージ-Stage</Filter>
+    <ClInclude Include="Scene\ResultScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="ResultScene.h">
-      <Filter>Scene\クリア-Clear</Filter>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="IScene.h">
-      <Filter>Scene\基底・マネージャー</Filter>
+    <ClInclude Include="Scene\TitleScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Scene\基底・マネージャー</Filter>
+    <ClInclude Include="Command\ICommand.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\InputHandle.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

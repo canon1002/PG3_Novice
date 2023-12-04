@@ -1,5 +1,5 @@
 #include <Novice.h>
-#include "SceneManager.h"
+#include "./Scene/SceneManager.h"
 
 const char kWindowTitle[] = "LE2B_24_PG3";
 

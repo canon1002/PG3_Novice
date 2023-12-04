@@ -1,7 +1,7 @@
 #include "IScene.h"
 
 // 初期シーンを代入(タイトルで初期化)
-int IScene::sceneNo = TITLE;
+int IScene::sceneNo = STAGE;
 
 // 仮想デストラクタの定義
 // 純粋仮想関数化していないので、ここで定義できる

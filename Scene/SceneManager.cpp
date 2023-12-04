@@ -5,11 +5,11 @@
 SceneManager::SceneManager() {
 	// 各シーンの配列
 	sceneArr_[TITLE] = std::make_unique<TitleScene>();
-	sceneArr_[STAGE] = std::make_unique<GameMainScene>();
+	sceneArr_[STAGE] = std::make_unique<StageScene>();
 	sceneArr_[CLEAR] = std::make_unique<ResultScene>();
 
 	// 初期シーン
-	currentSceneNo_ = TITLE;
+	currentSceneNo_ = STAGE;
 
 }
 
@@ -26,13 +26,14 @@ int SceneManager::Run(char* keys, char* preKeys) {
 		Novice::GetHitKeyStateAll(keys);
 
 		// シーンのチェック
-		prevSceneNo_ = currentSceneNo_;
 		currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneNo();
 
 		// シーン変更チェック
 		if (prevSceneNo_ != currentSceneNo_) {
 			sceneArr_[currentSceneNo_]->Init();
 		}
+		// 前回のシーン番号を上書き
+		prevSceneNo_ = currentSceneNo_;
 
 		/// 更新処理
 		sceneArr_[currentSceneNo_]->Update(keys,preKeys);
